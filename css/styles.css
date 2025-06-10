@@ -1,0 +1,60 @@
+:root {
+    --accent-color: #00be6b;
+    --bg-color-dark: #222831;
+    --bg-color: #393e46;
+    --main-color: #eee;
+
+    --bs-body-bg: var(--bg-color);
+    --bs-body-color: var(--main-color);
+}
+
+html {
+    scroll-padding-top: 20px;
+}
+
+body {
+    background-color: var(--bg-color-dark) !important;
+}
+
+.btn-primary, .bg-primary {
+    background-color: var(--accent-color) !important;
+}
+
+.text-primary {
+    color: var(--main-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bg-color) !important;
+}
+
+::placeholder {
+    color: #777 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #cfffec !important;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 5px;
+    }
+
+    .student-links {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        a {
+            font-size: 25px;
+            color: var(--accent-color) !important;
+        }
+    }
+}
